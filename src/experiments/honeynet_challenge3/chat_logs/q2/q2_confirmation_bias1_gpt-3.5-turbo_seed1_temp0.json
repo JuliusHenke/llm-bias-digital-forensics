@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-95Cet4o4JndPT5HgzQXMgPfU2rAiD",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "There are several suspicious processes with sockets open in the memory image of the employee's virtual machine:\n\n1. msiexec.exe (PID 244) has a socket open with remote addresses 212.150.164.203:80 and 193.104.22.71:80.\n2. msiexec.exe (PID 452) has a socket open with an unknown protocol and address.\n3. wscntfy.exe (PID 1132) has a socket open with an unknown protocol and address.\n\nThe presence of msiexec.exe with connections to external IP addresses raises concerns about potential unauthorized activities. Further investigation into the network traffic and the purpose of these connections is recommended to determine if any malicious actions were taken.",
+        "role": "assistant",
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1711027327,
+  "model": "gpt-3.5-turbo-0125",
+  "object": "chat.completion",
+  "system_fingerprint": "fp_4f0b692a78",
+  "usage": {
+    "completion_tokens": 148,
+    "prompt_tokens": 3516,
+    "total_tokens": 3664
+  }
+}

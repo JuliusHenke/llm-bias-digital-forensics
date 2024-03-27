@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-95CekqIhv5ova0VtJiFhDPbPvHckK",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "There are several suspicious processes with sockets open:\n\n1. Process ID 4 has TCP port 139 open on the local address 192.168.0.176.\n2. Process ID 880 has TCP port 1185 open on the local address 0.0.0.0.\n3. Process ID 1244 has UDP port 1900 open on the local address 127.0.0.1.\n4. Process ID 1040 has UDP port 1186 and 1182 open on the local address 127.0.0.1.\n5. Process ID 1100 has UDP port 1047 open on the local address 0.0.0.0.\n6. Process ID 1752 has UDP port 1178 open on the local address 0.0.0.0.\n\nThese open sockets could indicate network communication for potentially malicious activities. Further analysis and investigation are recommended to determine the nature and impact of these connections.",
+        "role": "assistant",
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1711027318,
+  "model": "gpt-3.5-turbo-0125",
+  "object": "chat.completion",
+  "system_fingerprint": "fp_4f0b692a78",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 3500,
+    "total_tokens": 3700
+  }
+}

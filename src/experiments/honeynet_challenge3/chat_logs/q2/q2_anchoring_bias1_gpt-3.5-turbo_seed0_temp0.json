@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-94A7NoBDNwmopCIe0E2WLrJolXmz2",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "The suspicious process with open sockets is msiexec.exe (PID 244). It has an open connection to a remote address 212.150.164.203 on port 80. This activity could be indicative of communication with a remote server, potentially for downloading or uploading data. It is recommended to further investigate the nature of this connection to determine if it is related to the suspected incident involving the PDF file.",
+        "role": "assistant",
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1710779233,
+  "model": "gpt-3.5-turbo-0125",
+  "object": "chat.completion",
+  "system_fingerprint": "fp_4f2ebda25a",
+  "usage": {
+    "completion_tokens": 83,
+    "prompt_tokens": 3528,
+    "total_tokens": 3611
+  }
+}

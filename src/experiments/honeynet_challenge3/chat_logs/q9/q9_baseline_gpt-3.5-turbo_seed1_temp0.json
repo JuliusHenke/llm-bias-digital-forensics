@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-94AA1UIYkllxkytT2z4FHN3GkOFKM",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "The registry key \"Microsoft\\Windows NT\\CurrentVersion\\Winlogon\" contains values related to user logon settings. Notably, the \"Userinit\" value includes an additional executable \"C:\\WINDOWS\\system32\\sdra64.exe\" alongside the legitimate \"C:\\WINDOWS\\system32\\userinit.exe\". This suggests a potential malicious activity as an unauthorized executable is being launched during user logon. Further investigation into the \"sdra64.exe\" file and its associated activities is recommended to determine its impact on the system and the suspected infection.",
+        "role": "assistant",
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1710779397,
+  "model": "gpt-3.5-turbo-0125",
+  "object": "chat.completion",
+  "system_fingerprint": "fp_4f2ebda25a",
+  "usage": {
+    "completion_tokens": 111,
+    "prompt_tokens": 771,
+    "total_tokens": 882
+  }
+}

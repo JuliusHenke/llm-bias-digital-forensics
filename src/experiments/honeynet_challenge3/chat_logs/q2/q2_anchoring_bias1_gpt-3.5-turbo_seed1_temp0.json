@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-95CfI0n1WhIbMX4GXBwrw80tFimK8",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "There are some suspicious processes with open sockets in the memory image:\n\n1. msiexec.exe (PID 244) has an open connection to 212.150.164.203 on port 80.\n2. AcroRd32.exe (PID 1752) has an open connection to 212.150.164.203 on port 80.\n3. svchost.exe (PID 880) has open connections to 193.104.22.71 on port 80 and 193.104.22.71 on port 80.\n4. firefox.exe (PID 888) has open connections to 66.249.91.104 on port 80 and 212.150.164.203 on port 80.\n\nThese connections to external IP addresses on common ports like 80 could indicate potential communication with malicious servers or websites. Further analysis and investigation into the network traffic of these processes are recommended to determine the nature of these connections and their impact on the system.",
+        "role": "assistant",
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1711027352,
+  "model": "gpt-3.5-turbo-0125",
+  "object": "chat.completion",
+  "system_fingerprint": "fp_4f0b692a78",
+  "usage": {
+    "completion_tokens": 203,
+    "prompt_tokens": 3528,
+    "total_tokens": 3731
+  }
+}

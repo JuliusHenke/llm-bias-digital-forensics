@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-94A7UVXv9beRSPxAEjKvcnW7RYmZd",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "There are several suspicious processes with open sockets found in the memory image:\n\n1. Process ID 4 (System) has an open TCP connection to 192.168.0.176 on port 139.\n2. Process ID 880 (svchost.exe) has an open TCP connection to 0.0.0.0 on port 1185.\n3. Process ID 1244 (svchost.exe) has open UDP connections to various addresses on different ports.\n4. Process ID 888 (firefox.exe) has open TCP connections to external IP addresses on ports 1176 and 1172.\n\nThese findings indicate potential network communication and activity that may be related to the suspicious PDF file. Further analysis and investigation into these processes and connections are recommended to determine the extent of any malicious activities.",
+        "role": "assistant",
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1710779240,
+  "model": "gpt-3.5-turbo-0125",
+  "object": "chat.completion",
+  "system_fingerprint": "fp_4f2ebda25a",
+  "usage": {
+    "completion_tokens": 164,
+    "prompt_tokens": 3522,
+    "total_tokens": 3686
+  }
+}

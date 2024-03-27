@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-95CfewEodizRoapzE016yjVLf2Yob",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "There are several suspicious processes with sockets open in the provided data:\n\n1. Process ID 888 (firefox.exe) has a TCP connection open on port 1168 to 127.0.0.1.\n2. Process ID 1244 (svchost.exe) has TCP connections open on ports 1189 and 2869 to local and remote addresses.\n3. Process ID 4 (System) has a TCP connection open on port 139 to 192.168.0.176.\n4. Process ID 880 (svchost.exe) has a TCP connection open on port 1185 to 0.0.0.0.\n5. Process ID 1752 (AcroRd32.exe) has a TCP connection open on port 1178 to 0.0.0.0.\n\nThese processes and their associated network connections should be further investigated as they may indicate suspicious or unauthorized network activity related to the suspected infection.",
+        "role": "assistant",
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1711027374,
+  "model": "gpt-3.5-turbo-0125",
+  "object": "chat.completion",
+  "system_fingerprint": "fp_fa89f7a861",
+  "usage": {
+    "completion_tokens": 196,
+    "prompt_tokens": 3526,
+    "total_tokens": 3722
+  }
+}

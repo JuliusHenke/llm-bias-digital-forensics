@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-94A7Y2kzAsp5n2klnHsp6F7EH8T88",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "There are several suspicious processes with open sockets in the provided data:\n\n1. Process ID 888 (firefox.exe) has an open socket with a remote address 66.249.91.104 on port 80.\n2. Process ID 1244 (spoolsv.exe) has open sockets with remote addresses 193.104.22.71 and 192.168.0.1 on port 80 and 30379 respectively.\n3. Process ID 4 (System) has an open socket with a remote address 192.168.0.176 on port 139.\n4. Process ID 880 (svchost.exe) has an open socket with a remote address 0.0.0.0 on port 1185.\n\nThese processes and their corresponding network connections should be further investigated as they may indicate suspicious or unauthorized activities.",
+        "role": "assistant",
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1710779244,
+  "model": "gpt-3.5-turbo-0125",
+  "object": "chat.completion",
+  "system_fingerprint": "fp_4f2ebda25a",
+  "usage": {
+    "completion_tokens": 174,
+    "prompt_tokens": 3527,
+    "total_tokens": 3701
+  }
+}

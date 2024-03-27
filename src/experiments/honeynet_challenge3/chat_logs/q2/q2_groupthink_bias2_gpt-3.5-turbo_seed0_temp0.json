@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-94A7caM5WAXsaOUYwKWFMN3V1nTI6",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "There are several suspicious processes with open sockets in the provided memory analysis:\n\n1. Process ID 888 (firefox.exe) has established connections to remote addresses 212.150.164.203 and 66.249.91.104 on ports 1176 and 1172, respectively.\n2. Process ID 1244 (svchost.exe) has connections to local address 192.168.0.176 on ports 1189 and 2869.\n3. Process ID 4 (System) has a connection to TCP port 139 on the local address 192.168.0.176.\n4. Process ID 880 (svchost.exe) has a connection to remote address 193.104.22.71 on port 1185.\n\nThese connections could be indicative of suspicious network activity related to the suspected phishing attack targeting alg.exe. Further analysis and investigation into these processes and connections are recommended to determine the extent of the potential breach.",
+        "role": "assistant",
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1710779248,
+  "model": "gpt-3.5-turbo-0125",
+  "object": "chat.completion",
+  "system_fingerprint": "fp_4f2ebda25a",
+  "usage": {
+    "completion_tokens": 196,
+    "prompt_tokens": 3528,
+    "total_tokens": 3724
+  }
+}

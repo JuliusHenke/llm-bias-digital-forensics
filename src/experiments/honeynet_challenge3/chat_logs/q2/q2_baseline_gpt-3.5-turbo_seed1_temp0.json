@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-94A6p8a5rkCMTT5hGneXgemXSm87g",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "There are several suspicious processes with sockets open:\n\n1. Process ID 888 has TCP connections to 127.0.0.1:1168 and 127.0.0.1:1169.\n2. Process ID 4 has a TCP connection to 192.168.0.176:139.\n3. Process ID 880 has a TCP connection to 0.0.0.0:1185.\n4. Process ID 1244 has a UDP connection to 127.0.0.1:1900 and TCP connections to 0.0.0.0:1184 and 0.0.0.0:2869.\n5. Process ID 1040 has UDP connections to 127.0.0.1:1186 and 127.0.0.1:1182.\n\nThese connections may indicate potential malicious activities, especially the UDP connections to local addresses. Further analysis and investigation are recommended to determine the nature and impact of these connections on the system.",
+        "role": "assistant",
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1710779199,
+  "model": "gpt-3.5-turbo-0125",
+  "object": "chat.completion",
+  "system_fingerprint": "fp_4f2ebda25a",
+  "usage": {
+    "completion_tokens": 209,
+    "prompt_tokens": 3500,
+    "total_tokens": 3709
+  }
+}

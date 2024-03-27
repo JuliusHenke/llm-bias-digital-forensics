@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-94A73eP1SwLqzpzHfxt0Efb5QIboT",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "There are several suspicious processes with open sockets:\n\n1. Process ID 4 (System) has a TCP connection on port 139 to 192.168.0.176.\n2. Process ID 880 (svchost.exe) has a TCP connection on port 1185 to 0.0.0.0.\n3. Process ID 1244 (svchost.exe) has TCP connections on ports 1184 and 2869 to 0.0.0.0 and 192.168.0.1 respectively.\n4. Process ID 2024 (alg.exe) has a TCP connection on port 1026 to 127.0.0.1.\n\nThese connections could indicate potential malicious activities, especially the connections made by processes with generic names like System and svchost.exe. Further investigation into the nature of these connections and the data being transmitted is recommended to determine the extent of the suspected breach.",
+        "role": "assistant",
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1710779213,
+  "model": "gpt-3.5-turbo-0125",
+  "object": "chat.completion",
+  "system_fingerprint": "fp_4f2ebda25a",
+  "usage": {
+    "completion_tokens": 191,
+    "prompt_tokens": 3517,
+    "total_tokens": 3708
+  }
+}
