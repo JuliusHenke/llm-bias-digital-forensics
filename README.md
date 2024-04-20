@@ -1,4 +1,4 @@
-# Evaluating Bias in AI Generated Responses within Digital Forensics
+# Investigating Prompt-Induced Bias in GPT-3.5 Turbo Responses within Digital Forensics
 
 This repository contains experiments that we performed on
 the [Honeynet challenge 3 "Banking Troubles"](https://www.honeynet.org/challenges/forensic-challenge-3-banking-troubles/)
